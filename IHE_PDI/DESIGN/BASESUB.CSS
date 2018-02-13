@@ -1,0 +1,257 @@
+/* 情報ページ共通スタイルシート													*/
+/* Ver.1.0.00 : 2012/04/20 初版													*/
+/********************************************************************************/
+
+	/*=============================== 上位で設定 ===============================*/
+	body {
+		font-family : Meiryo;
+		background-color:#F7FAFF;
+ 	}
+ 	
+	a:link{
+	  color: #000080;
+	}
+
+	a:hover{
+		color: #993399;	
+	}
+	
+	/*====================== コンテナ（大枠、一番外の枠） ====================*/
+	div#container{
+		border-top		: 1px solid #DDD;
+		border-right	: 3px solid #CCC;
+		border-bottom	: 3px solid #CCC;
+		border-left		: 1px solid #DDD;
+		width			: 843px;
+		height			: 550px;
+		margin			: 20px auto;
+		background-color: #FFF;
+		position		: relative;					/* コピーライトが absolute であるため必要 */
+	}
+	
+	/*================================== ヘッダ ==============================*/
+	div#Header div {
+		font-size		: 10pt;						/* 画像内に収めるためフォントサイズ変更に依存させない */
+		position		: absolute;
+		left			: 0px;
+		top				: 30px;
+	}
+	div#Header a {									/* a要素 共通 */
+		text-decoration : none;						/* 下線を引かない */
+		outline			: none; 					/* クリック時の枠を出さない */
+		position		: relative;
+	}
+
+	a#HeaderABack {									/* 「戻る」の画像座標 */
+		left 	: 660px;
+		top		:-22px;	
+	}
+
+	a#HeaderABack span {							/* 「戻る」の文字座標 */
+		position	: relative;
+		left		: -41px;
+		top			: -8px;
+	}
+
+	a#HeaderATop {									/* 「TOP」の画像座標 */
+		left 	: 635px;
+		top		:-22px;	
+	}
+
+	a#HeaderATop span {								/* 「TOP」の文字座標 */
+		position	: relative;
+		left		: -43px;
+		top			: -8px;
+	}
+	
+	/*============================ 添付ファイル一覧を開く ====================*/
+	div#AttachFileOpen {
+		font-size	: 11pt;
+		position	: relative;						/* 「添付ファイル一覧を開く」の画像座標 */
+		left		: 614px;
+		top			: 1em;
+	}
+
+	div#AttachFileOpen a {							/* a要素 共通 */
+		text-decoration	: none;						/* 下線を引かない */
+		outline			: none;						/* クリック時の枠を出さない */
+	}
+	
+	div#AttachFileOpen span {						/* 「添付ファイル一覧を開く」の文字座標 */
+		position		: relative;
+		left			: -191px;
+		top				: -8px;
+	}
+
+	/*============================ スペーサー ================================*/
+	div#SpacerDiv	{
+		height			: 20px;						/* これがないと「添付ファイルを開く」と下のテーブルが重なる */
+	}
+
+	/*====================== 患者リスト（サブテーブル） ======================*/
+	.subTable {
+		text-align		: center
+		background-color: #FFF;
+		margin-bottom	: 20px;
+		border-collapse : collapse;					/* cellspacing = "0" に相当 */
+		word-break		: break-all;				/* 改行任意*/
+	}
+	
+	.subTable th{
+		font-size		: 70%;
+		padding			: 2px 4px;
+		text-align		: left;
+		border			: 1px solid gray;
+		border-style	: none;						/* 患者リスト TH境界無し */
+		color			: #000000;					/* 患者リスト フォント(仕様) */
+	}
+	.subTable td{
+		font-size		: 70%;
+		padding			: 2px 4px;
+		text-align		: left;
+		border			: 1px solid gray;
+		border-style	: none;						/* 患者リスト TD境界無し */
+		color			: #000000;					/* 患者リスト フォント(仕様) */
+		width			: 200px;					/* データ表示域の幅を確保 */
+		line-height		: 110%;						/* 複数行のときに行間を詰める */
+	}
+
+	tr.subTableDark{
+		background-color: #D4DADA;					/* 患者リスト 暗部背景色(仕様) */
+	}
+
+	tr.subTableBright{
+		background-color: #E6EDEC;					/* 患者リスト 明部背景色(仕様) */
+	}
+	
+	/*========================== リスト（主テーブル） ========================*/
+	.OpeComment{									/* キャプション（操作説明） */
+		margin			: 0px 0 15px 0;
+		font-size		: 80%;
+		text-align		: left;
+		color			: #444747;
+	}
+	
+	div#twoTablesDiv {								/* 主テーブル収容ボックスの配置 */
+	 	margin-left		: 20px;
+	 	margin-top		: 0px;
+	}
+
+	/*--------見出し行・内容共通 --------*/
+	.mainTable {
+		table-layout	: fixed;					/* 列幅を先頭行に固定する */
+		word-break		: break-all;				/* 改行任意*/
+		border-collapse : collapse;					/* cellspacing = "0" に相当 */
+		width			: 750px;
+	}
+	
+
+	/*--------主テーブル見出し行 --------*/
+
+	#mainTableHeaderWrap {							/* 見出し行外回り（データ部とサイズを合わせるため） */
+		background-color: #4d73c0;					/* 背景色は見出し行背景色と同じ */
+	}
+	
+	
+	#mainTableHeader th{
+		background-color: #4D73C0;					/* 見出し行背景色(仕様) */
+		color			: #ffffff;					/* フォント(仕様) */
+		border-right	: dashed 1px #ffffff;		/* 仕切り線(仕様) */
+	}
+
+	#mainTableHeader th.Col_R {						/* 最右列 */
+		border-right 	: none ;					/* 最右列の見出し行の仕切り線は出さない */
+	}
+
+
+
+	/*--------主テーブル内容行 --------*/
+	#mainTableContentsScroll {						/* スクロールエリア */
+		overflow		: auto;
+		overflow-x		: hidden;
+		width			: 770px;
+		height			: 206px;
+	}
+
+	#mainTableContentsWrap {
+		background-color	: #C8D0CF;				/* 主テーブル外ベース(仕様) */
+		color				: #333333;				/* フォント(仕様) */
+	}
+
+	
+	tr.oddRow{										/* 主テーブル奇数列 */
+		background-color	: #FFF;
+		cursor				: hand;
+	}
+
+	tr.evenRow{										/* 主テーブル偶数列 */
+		background-color	: #F6F6F6;
+		cursor				: hand;
+	}
+
+
+
+
+	.mainTable th {
+		font-size			: 75%;
+		padding				: 4px 10px;
+		padding				: 0;					/* タグで指定しているため効かない */
+	}
+
+	.mainTable td {									/* 主テーブル境界 中*/
+		font-size		: 75%;
+		padding			: 4px 10px;
+	    border			: solid 1px  #808080;		/* 主テーブル 外ライン(仕様) */
+	    border-left		: dashed 1px #C0C0C0;		/* 仕切りは破線にするため(色は仕様) */
+	    border-right	: dashed 1px #C0C0C0;		/* 左右は破線(色は仕様) */
+	    color			: #333333;					/* フォント(仕様) 効かない(下の.mainTable a で) */
+		text-align		: left;						/*  No. 以外は左詰 */
+		line-height		: 110%;						/* 複数行のときに行間を詰める */
+	}
+
+	.mainTable a {									/* 主テーブルリンク */
+		display			: block;					/* 余白部分もクリックできるように */
+		outline			: none; 					/* クリック時の枠を出さない IE6では効かない */
+	    color			: #333333;					/* フォント(仕様) */
+	}
+
+	.mainTable  td.Col_1 {							/* 主テーブル境界 左*/
+		border-left		: solid 1px  #808080;		/* 左端の罫線は実線 主テーブル 外ライン(仕様) */
+		text-align		: right;					/* 左端は No. なので右詰 */
+	}
+
+	.mainTable td.Col_R {							/* 主テーブル境界 右*/
+		border-right	: solid 1px  #808080;		/* 右端の罫線は実線 主テーブル 外ライン(仕様) */
+	}
+
+	table#mainTableContents a{						/* 主テーブル リンク下線無し */
+		text-decoration	: none;
+	}
+
+	table#mainTableContents a:hover{				/* 主テーブル マウスオーバー行 */
+		color : #993399;
+	}
+
+	td.lineGap {									/* 行間 */
+		font-size		: 1pt;						/* 行間の幅 */
+		padding			: 0; 						/* 行間の幅に影響を与えるので 0 */
+		border			: none;						/* 罫線がでないように */
+		color			: #C8D0CF;					/* 外ベース(背景色)と同じ(文字が見えないよう) */
+	}
+
+	/*=============================== コピーライト ===========================*/
+	.copyRight{
+		position		: absolute;
+		width			: 843px;					/* container と同じ */
+		height			: 50px;
+		bottom			: 0px;
+		margin			: 0 0 0 0;
+		text-align		: center;
+		font-size		: 60%;
+		color			: #666666;					/* フォント(仕様) */
+	}
+
+	.copyRight hr{
+		color			: #DFE8E7;					/* ライン(仕様) */
+		width			: 95%;
+	}

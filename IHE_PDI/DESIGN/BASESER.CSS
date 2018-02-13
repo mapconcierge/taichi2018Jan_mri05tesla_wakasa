@@ -1,0 +1,25 @@
+		/*--------見出し行と内容で使われる --------*/
+		.mainTable  .Col_1 {				/* No. */
+			width	:  7%;
+		}
+		.mainTable .Col_2 {					/*シリーズ日付 */
+			width	: 15%;
+		}
+		.mainTable .Col_3 {					/* シリーズ時刻 */
+			width	: 15%;
+		}
+		.mainTable .Col_4 {					/* シリーズ番号 */
+			width	: 15%;
+		}
+		.mainTable .Col_5 {					/* シリーズ説明 */
+			width	: 38%;
+		}
+		.mainTable .Col_6 {					/* モダリティ */
+			width	: 10%;
+		}
+
+		/*-------- フォントが大きいと下に伸びるので高さを増やす --------*/
+		
+		div#container{
+			height	: 600px;
+		}

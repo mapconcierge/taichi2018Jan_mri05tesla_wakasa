@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>画像ビューワー Ver1.0</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<link rel="stylesheet" type="text/css" href="DESIGN/BASE.CSS">
+<link rel="stylesheet" type="text/css" href="DESIGN/BASESUB.CSS">
+<link rel="stylesheet" type="text/css" href="DESIGN/BASEPAT.CSS">
+</head>
+<body>
+<div id="container">
+    <div id="Header">&nbsp;患者情報
+        <div>
+            <a href="../INDEX.HTM" id="HeaderABack"><img src="DESIGN/BT_HOM_N.PNG"><span>TOP</span></a>
+        </div>
+    </div>
+    <div id="SpacerDiv"> <!-- これがないと「添付ファイル一覧を開く」と下のテーブルが重なる -->
+    </div>
+    <div align="center">
+        <table id="main_table">
+            <tr>
+            <td valign="top" align="left"> <!-- align="left" がないとスクロールバー表示時に見出しとデータの左端が揃わない -->
+            <div id="twoTablesDiv">
+                <div class="OpeComment">■参照したい患者の行をクリックすると、その患者の検査情報が表示されます。</div>
+                <table id="mainTableHeaderWrap" cellspacing="3"> <!-- 外ベースと合わせるため -->
+                    <tr>
+                    <td>
+                    <table id="mainTableHeader" class="mainTable">
+                        <tr align="center">
+                        <th class="Col_1">No.</th>
+                        <th class="Col_2">患者ID</th>
+                        <th class="Col_3">患者名</th>
+                        <th class="Col_4">生年月日</th>
+                        <th class="Col_5 Col_R">性別</th>
+                        </tr>
+                    </table>
+                    </td>
+                    </tr>
+                </table>
+                <div id="mainTableContentsScroll"> <!-- スクロール領域の定義 -->
+                <table id="mainTableContentsWrap" cellspacing="3"> <!-- cellspacing=は外ベース -->
+                    <tr>
+                    <td>
+                    <table id="mainTableContents" class="mainTable">
+                        <tr class="oddRow">
+                        <td class="Col_1"><a href="ST01.HTM">1</a></td>
+                        <td class="Col_2"><a href="ST01.HTM">0000110231</a></td>
+                        <td class="Col_3"><a href="ST01.HTM">ﾌﾙﾊｼ ﾀｲﾁ/古橋 大地</a></td>
+                        <td class="Col_4"><a href="ST01.HTM">1975/03/29</a></td>
+                        <td class="Col_5 Col_R"><a href="ST01.HTM">M</a></td>
+                        </tr>
+                    </table>
+                    </td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+            </td>
+            </tr>
+        </table>
+    </div>
+    <table class="copyRight">
+        <tr>
+        <td>
+        <hr>
+        Copyright JRC Engineering Co., Ltd. All rights reserved.
+        </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

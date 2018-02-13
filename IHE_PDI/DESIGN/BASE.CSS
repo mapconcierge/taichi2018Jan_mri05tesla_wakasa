@@ -1,0 +1,288 @@
+/* スタイルシート */
+/* Ver.1.0.00 : 2006/10/06 初版                         */
+/* Ver.1.0.01 : 2006/11/02 操作説明に関する枠の新設     */
+
+body{
+/*background-color:#F7FAFF;*/
+color:#333;
+}
+
+img{
+border:none;
+}
+
+a{
+color:#001C96;
+width:100%;	/* add 20120410 */
+height:100%;	/* add 20120410 */
+}
+
+a.cell{
+display:block;width:100%;height:100%;text-decoration:none;}
+}
+
+/* 各ページの見出し */
+h1{
+width:800px;
+height:35px;
+/* ↓↓↓ 変更管理表 No.60 2006/11/02 杉田 */
+/* margin:20px 0 20px 0; */
+margin:20px auto 5px auto;
+/* ↑↑↑ 変更管理表 No.60 2006/11/02 杉田 */
+padding:0 0 0 0;
+font-size:100%;
+background-color:#FFF;
+padding-bottom:5px;
+border-bottom:2px dotted #CCC;
+}
+
+h1 span{
+display:none;
+}
+
+/* 各ページタイトル画像 */
+h1#patientInfo{background:url("title_patInf.gif") no-repeat;}
+h1#checkInfo{background:url("title_stuInf.gif") no-repeat;}
+h1#series{background:url("title_serInf.gif") no-repeat;}
+h1#largeImg{background:url("title_eimInf.gif") no-repeat;}
+h1#imgList{background:url("title_imgInf.gif") no-repeat;}
+h1#repList{background:url("title_repInf.gif") no-repeat;}
+h1#largeImgMulti{background:url("title_eimInfMulti.gif") no-repeat;}
+
+
+/* コピーライト */
+.copyRight{
+margin:30px 0 15px 0;
+text-align:center;
+font-size:60%;
+color:#BBB;
+}
+
+div.back{
+text-align:left;
+font-size:11pt;
+margin-left:28px;
+margin-bottom:20px;
+}
+
+div#imgNavi{
+font-size:10pt;
+margin-bottom:8px;
+}
+
+#imgNavi img{
+margin-left:8px;
+margin-right:8px;
+}
+
+
+.order1 {
+	position: relative;
+	width:187px;
+	height:90px;
+	top:0px;
+	right:20px;
+}
+.order2 {
+	position: relative;
+	width:187px;
+	height:90px;
+	top:0px;
+	right:20px;
+}
+
+ul#menu{
+	position: relative;
+	list-style:none;
+}
+ul#menu a{
+	position: absolute;
+	display:block;
+	width:187px;
+	height:90px;
+	text-align:center;
+	text-decoration: none;
+	overflow:hidden;
+	line-height:22.5px;
+}
+
+ul#detail{
+	position: relative;
+	left:10px;
+	margin: 0 0 0 1em;
+	padding: 0px;
+}
+
+a.btn{
+    background-image:url(BT_CNT_R.PNG);
+}
+
+a:hover.btn{
+    background-position:0px -90px;
+}
+a:hover {text-decoration : underline ; color : #993399 ;}　　<!-- マウスオーバー処理　>
+
+A{
+  color : navy;
+  font-family : Meiryo;
+}
+
+/*　ヘッダー　*/
+#Header {
+  position : relative;
+  height:46px;
+  background-color : #444747 ;
+  color : #FFFFFF ;
+  font-size: 190%;
+  line-height:50px;
+  text-align : left;
+ }
+
+/*　病院名　*/
+ #Hospital {
+   position : relative;
+   font-size: 115%;
+   text-align : left;
+   line-Height : 140% ;
+ }
+
+ #HospitalAddr {
+   font-size: 65%;
+   text-align : left;
+   line-Height : 140% ;
+ }
+/*　はじめに　*/
+ #index {
+   margin : 10px 0px 0px 0px;
+   height:25px;
+   background-color : #C8D0E7 ;
+   font-size: 115%;
+   text-align : left;
+   line-Height : 25px ;
+ }
+
+
+/*　説明　*/
+ #explain {
+   margin : 5px 0px 0px 0px;
+   color : #333333;
+   font-size: 75%;
+   text-align : left;
+   line-Height : 120% ;
+ }  
+
+/*　画像を見る　*/
+ #viewer { 
+   margin : 10px 0px 0px 0px;
+   height:25px;
+   color : #000080;
+   font-size: 65%;       
+   padding-left:10px　;
+   text-align : left;
+   line-Height : 120% ;
+  }
+  
+/*　その他のファイル/使用について/設定　*/
+ #report1 {
+   margin : 5px 0px 0px 10px;
+   color : #000080;
+   font-size: 90%;
+   text-align : left;
+   line-Height : 150% ;
+  }
+
+/*　添付ファイル一覧を見る/他　*/
+ #rep { 
+   color : #000080;
+   font-size: 75%;       
+   text-align : left;
+   line-Height : 150% ;
+  }
+
+/*　ラベルベース（アクティブ）*/
+ #LabelA {
+   background-color : #C8D0E7 ;
+   margin : 0px 0px 0px 0px;
+   color : #333333;
+   font-size: 80%;
+   text-align : left;
+   line-Height : 120% ;
+ }
+/*　ラベルベース（通常）*/
+ #LabelN {
+   background-color : #C8D0CF ;
+   margin : 0px 0px 0px 0px;
+   color : #333333;
+   font-size: 80%;       
+   text-align : left;
+   line-Height : 120% ;
+ }
+/*　　ラベルベース（メニュー）　*/
+ #LabelM {
+   background-color : #DFE8E7 ;
+   margin : 0px 0px 0px 0px;
+   color : #000080;
+   font-size: 75%;       
+   text-align : left;
+   line-Height : 120% ;
+ }
+
+/*　大項目　*/
+ #index10{
+   margin : 0px 0px 0px 0px;
+   height:25px;
+   background-color : #C8D0E7 ;
+   color : #333333 ;
+   font-size: 100%; /*115%;*/
+   text-align : left;
+   text-valign : middle;
+   line-Height : 30px ;
+ }
+
+ #index11{
+   margin : 0px 0px 0px 0px;
+   height:25px;
+   background-color : #C8D0E7 ;
+   color : #333333 ;
+   font-size: 115%;
+   line-Height : 30px ;
+   text-align : left;
+   text-valign : middle;
+ }
+
+/*　中項目　*/
+ #index20{
+   margin : 0px -1px 0px -1px;
+   height:25px;
+   background-color : #C8D0E7 ;
+   font-size: 100%;
+   line-Height : 30px ;
+   text-align : center;
+   text-valign : middle;
+ }
+ #index21{
+   margin : 0px 0px 0px -1px;
+   height:25px;
+   background-color : #DFE8E7 ;
+   font-size: 100%;
+   line-Height : 30px ;
+   text-align : left;
+   text-valign : middle;
+ }
+/*　小項目　*/
+ #index30{
+   position:relative;
+   background-color: #ffffff; 
+   margin:  -1px -1px 2px 30px;
+   /*margin: 0px 0px 1px 30px;*/
+   /*margin: -1px -1px 1px 30px;*/
+   padding: 4px 50px 0px 0px;
+   height:21px;
+   font-size: 95%;
+   text-align : left;
+   line-Height : 25px ;
+   color : #333333;
+   vertical-align : text-bottom;
+   text-decoration : none 
+} 
+ 

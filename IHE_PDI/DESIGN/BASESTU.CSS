@@ -1,0 +1,23 @@
+		/*--------見出し行・内容共通 --------*/
+		.mainTable  .Col_1 {				/* No. */
+			width	:  7%;
+		}
+		.mainTable .Col_2 {					/* 検査日 */
+			width	: 16%;
+		}
+		.mainTable .Col_3 {					/* 検査時刻 */
+			width	: 15%;
+		}
+		.mainTable .Col_4 {					/* 検査ID */
+			width	: 12%;
+		}
+		.mainTable .Col_5 {					/* 検査説明 */
+			width	: 20%;
+		}
+		.mainTable .Col_6 {					/* 照会医 */
+			width	: 15%;
+		}
+		.mainTable .Col_7 {					/* 依頼科 */
+			width	: 15%;
+		}
+

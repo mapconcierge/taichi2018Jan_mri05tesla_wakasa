@@ -1,0 +1,27 @@
+	/*====================== コンテナ（大枠、一番外の枠） ====================*/
+	div#container{
+		height			: 880px;		/* 広げる	*/
+	}
+
+	/*====================== 患者リスト（サブテーブル） ======================*/
+	table.subTable{
+		margin-bottom	: 10px;			/* 詰める。IE6で拡大画像がコピーライトと重なるのを回避	*/
+	}
+	table.subTable th{
+		width			: 6.5em;
+	}
+
+	/*========================== リスト（主テーブル） ========================*/
+	.OpeComment{						/* キャプション */
+		text-align		: left;
+		margin-bottom	: 0px;			/* 詰める。IE6で拡大画像がコピーライトと重なるのを回避	*/
+	}
+
+	.imgNavi {
+		margin-bottom	: 0px;			/* 詰める。IE6で拡大画像がコピーライトと重なるのを回避	*/
+	 	line-height		: 0%;
+	 }
+	 
+	 .imgNavi img {
+	 	cursor			: pointer;
+	 }

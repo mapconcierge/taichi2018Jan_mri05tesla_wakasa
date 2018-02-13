@@ -1,0 +1,44 @@
+
+	/*================================== ヘッダ ============================*/
+	a#HeaderABack {								/* 「戻る」の画像座標 */
+		left 	: 748px;
+		top		:-20px;	
+	}
+
+	a#HeaderABack span {						/* 「戻る」の文字座標 */
+		position	: relative;
+		left		: -43px;
+		top			: -8px;
+	}
+	
+	/*============================ スペーサー ==============================*/
+	div#SpacerDiv	{
+		height			: 40px;				/* 広げる */
+	}
+
+	/*========================== リスト（主テーブル） ======================*/
+	.mainTable {							/* テーブル						*/
+		width			: 700px;			/*   縮める						*/
+	}
+	#mainTableContentsScroll {				/* スクロールエリア				*/
+		width			: 723px;			/*   縮める						*/
+	}
+
+		/*--------見出し行・内容共通 --------*/
+		.mainTable  .Col_1 {				/* No. */
+			width		: 9%;
+		}
+		.mainTable .Col_2 {					/* 患者ID */
+			width		: 19%;
+		}
+		.mainTable .Col_3 {					/* 患者名 */
+			width		: 45%;
+		}
+		.mainTable .Col_4 {					/* 生年月日 */
+			width		: 18%;
+			text-align	: center;				/* 中央揃え */
+
+		}
+		.mainTable .Col_5 {					/* 性別 */
+			text-align	: center;				/* 中央揃え */
+		}

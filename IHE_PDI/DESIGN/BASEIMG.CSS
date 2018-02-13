@@ -1,0 +1,24 @@
+	/*====================== コンテナ（大枠、一番外の枠） ====================*/
+	div#container{
+		height			: 750px;		/* 広げる */
+	}
+	/*====================== 患者リスト（サブテーブル） ======================*/
+	table.subTable th {
+		width			: 6.5em;
+	}
+
+	/*========================== リスト（主テーブル） ========================*/
+	.OpeComment {								/* キャプション */
+		text-align		: left;
+	}
+	.OpeComment p {								/* キャプション２行目 */
+		margin-top		: 0;					/* １行目と離さない */
+	}
+
+	div#ScrollArea {
+		overflow	: scroll;
+		width		: 692px;
+		height		: 356px;
+		margin		: auto;
+	}
+

@@ -1,0 +1,59 @@
+	/*================================== ヘッダ ==============================*/
+	a#HeaderATop {								/* 「TOP」の画像座標 */
+		left 	: 748px;
+		top		:-20px;
+	}
+
+	a#HeaderATop span {							/* 「TOP」の文字座標 */
+		position	: relative;
+		left		: -43px;
+		top			: -8px;
+	}
+	/*--------見出し行・内容共通 --------*/
+	.mainTable {
+		width			: 780px;
+	}
+
+	/*--------主テーブル内容行 --------*/
+	#mainTableContentsScroll {					/* スクロールエリア */
+		width			: 800px;
+		height			: 300px;
+	}
+	
+		/*--------見出し行と内容で使われる --------*/
+		.mainTable  .Col_1 {				/* No. */
+			width	:  5%;
+		}
+		.mainTable .Col_2 {					/* 患者ID */
+			width	: 13%;
+		}
+		.mainTable .Col_3 {					/* 患者名 */
+			width	: 20%;
+		}
+		.mainTable .Col_4 {					/* 検査日 */
+			width	: 11%;
+		}
+		.mainTable .Col_5 {					/* 検査時刻 */
+			width	: 9%;
+		}
+		.mainTable .Col_6 {					/* 検査ID */
+			width	: 8%;
+		}
+
+		.mainTable .Col_7 {					/* モダリティ */
+			width	: 7%;
+		}
+
+		.mainTable .Col_8 {					/* 種別 */
+			width	: 7%;
+		}
+
+		.mainTable .Col_9 {					/* ファイル名 */
+			width	: 20%;
+		}
+
+		/*-------- フォントが大きいと下に伸びるので高さを増やす --------*/
+		
+		div#container{
+			height	: 600px;
+		}

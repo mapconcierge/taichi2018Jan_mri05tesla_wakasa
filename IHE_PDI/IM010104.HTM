@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><script type="text/javascript">
+<!--
+function imgselect(value){
+document.cookie = "imgno=" + escape(value) + ";";
+}
+//-->
+</script>
+
+<head>
+<title>画像ビューワー Ver1.0</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<link rel="stylesheet" type="text/css" href="DESIGN/BASE.CSS">
+<link rel="stylesheet" type="text/css" href="DESIGN/BASESUB.CSS">
+<link rel="stylesheet" type="text/css" href="DESIGN/BASEIMG.CSS">
+</head>
+<body>
+<div id="container">
+    <div id="Header">&nbsp;画像リスト
+        <div>
+            <a href="SR0101.HTM" id="HeaderABack"><img src="DESIGN/BT_BCK_N.PNG"><span>戻る</span></a>
+            <a href="../INDEX.HTM" id="HeaderATop"><img src="DESIGN/BT_HOM_N.PNG"><span>TOP</span></a>
+        </div>
+    </div>
+    <div id="SpacerDiv"> <!-- これがないと「添付ファイルを開く」と下のテーブルが重なる -->
+    </div>
+    <div align="center">
+        <table class="subTable">
+            <tr class="subTableDark">
+            <th>患者ID:</th>
+            <td>0000110231</td>
+            <th>患者名:</th>
+            <td>ﾌﾙﾊｼ ﾀｲﾁ/古橋 大地</td>
+            </tr>
+            <tr class="subTableBright">
+            <th>生年月日: </th>
+            <td>1975/03/29</td>
+            <th>性別:</th>
+            <td>M</td>
+            </tr>
+            <tr class="subTableDark">
+            <th>検査日:</th>
+            <td>2018/01/07</td>
+            <th>検査時刻:</th>
+            <td>11:05:26</td>
+            </tr>
+            <tr class="subTableBright">
+            <th>検査説明:</th>
+            <td></td>
+            <th>シリーズ説明:</th>
+            <td>T1 AX</td>
+            </tr>
+            <tr class="subTableDark">
+            <th>モダリティ:</th>
+            <td>MR</td>
+            <th></th>
+            <td></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+            <td align="center">
+            <div class="OpeComment">■画像をクリックすると、当該画像が拡大表示されます。</div>
+            <div id="ScrollArea" align="center"> <!-- スクロール領域の定義 -->
+                <table>
+                    <tr>
+                    <td><A href="EM010104.HTM"><IMG onclick=imgselect(1) src="THUMBNIL/D0000039.JPG"></A></td>
+                    <td><A href="EM010104.HTM"><IMG onclick=imgselect(2) src="THUMBNIL/D0000040.JPG"></A></td>
+                    <td><A href="EM010104.HTM"><IMG onclick=imgselect(3) src="THUMBNIL/D0000041.JPG"></A></td>
+                    <td><A href="EM010104.HTM"><IMG onclick=imgselect(4) src="THUMBNIL/D0000042.JPG"></A></td>
+                    <td><A href="EM010104.HTM"><IMG onclick=imgselect(5) src="THUMBNIL/D0000043.JPG"></A></td>
+                    <td><A href="EM010104.HTM"><IMG onclick=imgselect(6) src="THUMBNIL/D0000044.JPG"></A></td>
+                    <td><A href="EM010104.HTM"><IMG onclick=imgselect(7) src="THUMBNIL/D0000045.JPG"></A></td>
+                    <td><A href="EM010104.HTM"><IMG onclick=imgselect(8) src="THUMBNIL/D0000046.JPG"></A></td>
+                    </tr>
+                    <tr>
+                    <td><A href="EM010104.HTM"><IMG onclick=imgselect(9) src="THUMBNIL/D0000047.JPG"></A></td>
+                    <td><A href="EM010104.HTM"><IMG onclick=imgselect(10) src="THUMBNIL/D0000048.JPG"></A></td>
+                    <td><A href="EM010104.HTM"><IMG onclick=imgselect(11) src="THUMBNIL/D0000049.JPG"></A></td>
+                    <td><A href="EM010104.HTM"><IMG onclick=imgselect(12) src="THUMBNIL/D0000050.JPG"></A></td>
+                    <td><A href="EM010104.HTM"><IMG onclick=imgselect(13) src="THUMBNIL/D0000051.JPG"></A></td>
+                    <td><A href="EM010104.HTM"><IMG onclick=imgselect(14) src="THUMBNIL/D0000052.JPG"></A></td>
+                    <td><A href="EM010104.HTM"><IMG onclick=imgselect(15) src="THUMBNIL/D0000053.JPG"></A></td>
+                    <td><A href="EM010104.HTM"><IMG onclick=imgselect(16) src="THUMBNIL/D0000054.JPG"></A></td>
+                    </tr>
+                    <tr>
+                    <td><A href="EM010104.HTM"><IMG onclick=imgselect(17) src="THUMBNIL/D0000055.JPG"></A></td>
+                </table>
+            </div>
+            </td>
+            </tr>
+        </table>
+    </div>
+
+    <table class="copyRight">
+        <tr>
+        <td>
+        <hr>
+        Copyright JRC Engineering Co., Ltd. All rights reserved.
+        </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
